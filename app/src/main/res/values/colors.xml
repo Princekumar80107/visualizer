@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Basic Colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#757575</color>
+
+    <!-- Button Colors -->
+    <color name="button_primary">#00008B</color> <!-- Dark Blue, typically primary action buttons -->
+    <color name="button_secondary">#FFFF00</color> <!-- Yellow, secondary action buttons -->
+    <color name="button_success">#008000</color> <!-- Green, success buttons or actions -->
+
+    <!-- Other Colors -->
+    <color name="error">#FF0000</color> <!-- Red, typically used for error messages or warnings -->
+
+    <!-- Theme Colors -->
+    <color name="primary">#00008B</color> <!-- Dark Blue, primary color for the app's theme -->
+    <color name="primary_dark">#000062</color> <!-- Darker shade of primary color, for status bar -->
+    <color name="primary_light">#4C9AFF</color> <!-- Lighter shade of primary color, for lighter UI elements -->
+    <color name="secondary">#FFFF00</color> <!-- Yellow, secondary color for the app's theme -->
+    <color name="secondary_dark">#CCCC00</color> <!-- Darker shade of secondary color -->
+    <color name="secondary_light">#FFFF66</color> <!-- Lighter shade of secondary color -->
+</resources>

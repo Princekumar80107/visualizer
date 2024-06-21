@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Visualizer</string>
+    <string name="enter_values_separated_by_spaces_or_commas">Enter values separated by spaces or commas</string>
+    <string name="build_tree">Build Tree</string>
+    <string name="tree_visualizer">Tree Visualizer</string>
+    <string name="in_order">In-Order</string>
+    <string name="pre_order">Pre-Order</string>
+    <string name="post_order">Post-Order</string>
+    <string name="bubble_sort_visualizer">Bubble Sort Visualizer</string>
+    <string name="start_bubble_sort">Start Bubble Sort</string>
+    <string name="selection_sort_visualizer">Selection Sort Visualizer</string>
+    <string name="start_selection_sort">Start Selection Sort</string>
+</resources>
