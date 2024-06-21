@@ -30,7 +30,7 @@ class BubbleSortVisualizer : AppCompatActivity() {
             } else {
                 val values = parseInput(inputText)
                 if (values != null) {
-                    if (bubbleSortView.isSorting()) {
+                    if (bubbleSortView.isSorted) {
                         resetAndRestartAnimation(values)
                     } else {
                         startBubbleSortAnimation(values)

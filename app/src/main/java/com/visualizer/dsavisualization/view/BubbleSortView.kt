@@ -23,24 +23,24 @@ class BubbleSortView(context: Context, attrs: AttributeSet) : View(context, attr
     private var swapping = false
     private val boxSize = 100f
     private val boxMargin = 20f // Margin between boxes
+    var isSorted = false
 
     fun setArray(array: IntArray) {
         this.array = array
+        this.originalArray = array.copyOf()
+        isSorted = false
         requestLayout()
     }
 
     fun resetArray(originalArray: IntArray) {
-        this.array = originalArray.copyOf()
-        this.originalArray = originalArray.copyOf()
+        this.array = this.originalArray.copyOf()
+        isSorted = false
         invalidate()
     }
 
     fun startBubbleSortAnimation() {
+        isSorted = false
         bubbleSortStep(0, 0)
-    }
-
-    fun isSorting(): Boolean {
-        return swapping
     }
 
     private fun bubbleSortStep(i: Int, j: Int) {
@@ -57,21 +57,22 @@ class BubbleSortView(context: Context, attrs: AttributeSet) : View(context, attr
                         bubbleSortStep(i, j + 1)
                     }
                 } else {
-                    handler.postDelayed({ bubbleSortStep(i, j + 1) }, 1500) // Slower animation
+                    handler.postDelayed({ bubbleSortStep(i, j + 1) }, 1000) // Delay for animation
                 }
                 invalidate()
             } else {
-                bubbleSortStep(i + 1, 0)
+                handler.postDelayed({ bubbleSortStep(i + 1, 0) }, 1000) // Delay for animation
             }
         } else {
             currentIndices = null
+            isSorted = true
             invalidate()
         }
     }
 
     private fun animateSwap(index1: Int, index2: Int, onComplete: () -> Unit) {
         swapAnimationProgress = 0f
-        val swapDuration = 1000L // Slower animation
+        val swapDuration = 1000L // Duration of swap animation
 
         handler.post(object : Runnable {
             override fun run() {
@@ -126,6 +127,14 @@ class BubbleSortView(context: Context, attrs: AttributeSet) : View(context, attr
                     drawBox(canvas, animatedX, centerY, array[i].toString())
                 }
             } else {
+                drawBox(canvas, x, centerY, array[i].toString())
+            }
+        }
+
+        if (isSorted) {
+            for (i in array.indices) {
+                paint.color = Color.BLACK
+                val x = startX + i * (boxSize + boxMargin) + boxSize / 2
                 drawBox(canvas, x, centerY, array[i].toString())
             }
         }
