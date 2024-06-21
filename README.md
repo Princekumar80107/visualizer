@@ -47,15 +47,6 @@ The DSA (Data Structures and Algorithms) Visualization app is designed to help u
 - A view that displays the array elements in boxes.
 - Animated sorting visualization showing the selection and swapping of minimum elements.
 - Button to start the sorting animation.
-
-## Themes
-### Day Theme
-- Bright and vibrant color scheme for better visibility in well-lit environments.
-
-### Night Theme
-- Darker color scheme to reduce eye strain in low-light conditions.
-- Automatically applied based on user preference or system settings.
-
 ## Technologies Used
 - **Kotlin**: Primary programming language.
 - **Android Views and Custom Views**: For creating and managing the visualizations.
