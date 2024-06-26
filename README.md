@@ -47,6 +47,12 @@ The DSA (Data Structures and Algorithms) Visualization app is designed to help u
 - A view that displays the array elements in boxes.
 - Animated sorting visualization showing the selection and swapping of minimum elements.
 - Button to start the sorting animation.
+
+### Insertion Sort Visualizer
+- Input field for the array values.
+- A view that displays the array elements in boxes.
+- Animated sorting visualization showing the smaller and placing it to its correct position.
+- Button to start the sorting animation.
 ## Technologies Used
 - **Kotlin**: Primary programming language.
 - **Android Views and Custom Views**: For creating and managing the visualizations.
