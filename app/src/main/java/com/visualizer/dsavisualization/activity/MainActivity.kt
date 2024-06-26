@@ -27,7 +27,8 @@ class MainActivity : AppCompatActivity() {
     private fun setUpData() {
         visualizerList.add(VisualizationItem(R.drawable.bubble, "Bubble Sort Visualizer",  1))
         visualizerList.add(VisualizationItem(R.drawable.selection, "Selection Sort Visualizer",  2))
-        visualizerList.add(VisualizationItem(R.drawable.tree, "Tree Visualizer",  3))
+        visualizerList.add(VisualizationItem(R.drawable.insertion, "Insertion Sort Visualizer", 3))
+        visualizerList.add(VisualizationItem(R.drawable.tree, "Tree Visualizer",  4))
     }
 
     private fun setUpRecyclerView() {

@@ -9,6 +9,7 @@ import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.visualizer.dsavisualization.R
 import com.visualizer.dsavisualization.activity.BubbleSortVisualizer
+import com.visualizer.dsavisualization.activity.InsertionSortVisualizer
 import com.visualizer.dsavisualization.activity.SelectionSortVisualizer
 import com.visualizer.dsavisualization.activity.TreeVisualizer
 import com.visualizer.dsavisualization.model.VisualizationItem
@@ -46,6 +47,10 @@ class VisualizerItemAdapter(private var context: Context, private val visualizer
                     context.startActivity(intent)
                 }
                 3 -> {
+                    val intent = Intent(context, InsertionSortVisualizer::class.java)
+                    context.startActivity(intent)
+                }
+                4 -> {
                     val intent = Intent(context, TreeVisualizer::class.java)
                     context.startActivity(intent)
                 }

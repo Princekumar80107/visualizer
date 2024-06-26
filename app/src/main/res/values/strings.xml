@@ -10,4 +10,6 @@
     <string name="start_bubble_sort">Start Bubble Sort</string>
     <string name="selection_sort_visualizer">Selection Sort Visualizer</string>
     <string name="start_selection_sort">Start Selection Sort</string>
+    <string name="insertion_sort_visualizer">Insertion Sort Visualizer</string>
+    <string name="start_insertion_sort">Start Insertion Sort</string>
 </resources>
